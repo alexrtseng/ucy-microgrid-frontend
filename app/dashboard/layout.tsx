@@ -3,15 +3,15 @@ import SideNavBar from '../_components/SideNavBar';
 const sideBarLinks = [
     {
         label: "Monitor",
-        href: "dashboard/monitor"
+        href: "/dashboard/monitor"
     },
     {
         label: "Devices",
-        href: "dashboard/devices"
+        href: "/dashboard/devices"
     },
     {
         label: "Settings",
-        href: "dashboard/settings"
+        href: "/dashboard/settings"
     }
 ]
 

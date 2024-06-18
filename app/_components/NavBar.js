@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const navBarLinks = [
     { href: '/', label: 'Home' },
@@ -13,7 +14,14 @@ return (
     <div className="flex items-center justify-between bg-blue-100 p-4">
         <div className="flex items-center">
             <div className="text-2xl font-bold mr-4">UCY Microgrid</div>
-            <div className="text-2xl font-bold">Logo</div>
+            <div className="text-2xl font-bold">
+                <Image 
+                src="/favicon.ico" 
+                alt="Logo" 
+                width={50}
+                height={50}
+                />
+            </div>
         </div>
         <div className="flex space-x-4">
             {navBarLinks.map((link) => (
