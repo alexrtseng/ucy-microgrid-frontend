@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface DeviceProps {
+export interface DeviceProps {
     name: string;
     ipAddress: string;
     connectivityPercentage: number;
