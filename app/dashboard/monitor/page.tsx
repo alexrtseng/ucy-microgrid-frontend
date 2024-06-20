@@ -21,7 +21,7 @@ function isSmartMeterDataProp(obj: any): obj is SmartMeterDataProps {
 export default function MonitorPage() {
   const getRTData = async () => {
     let rtAPIData: SmartMeterDataProps[] = [] as SmartMeterDataProps[];
-    rtAPIData = await getData('rt-all-meters')
+    rtAPIData = await getData('rt-all-meters/')
     if (!Array.isArray(rtAPIData)) {
       console.error('Error fetching data: rtAPIData is not an array');
       return []; // add functionality to make this an error view
