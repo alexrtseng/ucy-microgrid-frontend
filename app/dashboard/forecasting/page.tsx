@@ -18,7 +18,7 @@ export default function ForecastingPage() {
                 <button onClick={() => setTimeRange(2)}>14 Days</button>
             </div>
             <div>
-                <ForecastChart timeRange={timeRange === 0 ? 'Tomorrow' : timeRange === 1 ? '7 Days' : '14 Days'} />
+                <ForecastChart key={timeRange} timeRange={timeRange} />
             </div>
         </div>
     );
