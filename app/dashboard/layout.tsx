@@ -10,6 +10,10 @@ const sideBarLinks = [
         href: "/dashboard/devices"
     },
     {
+        label: "Forecasting",
+        href: "/dashboard/forecasting"
+    },
+    {
         label: "Settings",
         href: "/dashboard/settings"
     }

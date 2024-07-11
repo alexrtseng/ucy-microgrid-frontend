@@ -1,4 +1,4 @@
-const BASEURL = 'http://localhost:8000/metrics/'
+const BASEURL = 'http://localhost:8000/'
 
 export default async function getData(url: string) {
     try {

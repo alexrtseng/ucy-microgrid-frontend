@@ -15,7 +15,7 @@ function isSmartMeter(obj: any): obj is DeviceProps {
 
 export default async function DevicesPage() {
   let smInfo: DeviceProps[] = [];
-  smInfo = await getData('devices');
+  smInfo = await getData('metrics/devices');
 
   if (!Array.isArray(smInfo)) {
     console.error('Error fetching data: smInfo is not an array');
